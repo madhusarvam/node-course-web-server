@@ -52,6 +52,13 @@ app.get('/about',(req,res)=>{
 		page_title:"About Page",
 	})
 });
+app.get('/projects',(req,res)=>{
+	res.render('project.hbs',{
+		main_title:"Madhu - Projects",
+	    page_title:"Porfolio Page",
+	    bodyData:"Welcome to my portfolio",
+	})
+})
 app.get('/bad',(req,res)=>{
 	res.send({
 		errorMessage:"Unable to fetch data"	
